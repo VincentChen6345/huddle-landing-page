@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  line-height: 1.6;
+  font-family: arial;
+  font-weight: 400;
+  font-size: 1rem;
+  background-image: url("images/bg-desktop.svg");
+  background-color: #5334a2; }
