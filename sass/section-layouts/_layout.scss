@@ -1,0 +1,18 @@
+.section-container {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.lp-body {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2rem;
+  &__bg-img {
+    width: 50vw;
+  }
+
+  &__content {
+  }
+}
