@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,43 +9,86 @@ html {
 
 body {
   line-height: 1.6;
-  font-family: arial;
+  font-family: Source Sans Pro;
   font-weight: 400;
   font-size: 1rem;
   background-image: url("images/bg-desktop.svg");
   background-color: #5334a2; }
 
 .heading-primary {
-  margin-top: 2rem;
+  margin-top: 3rem;
   color: #fcfbfc;
-  font-size: 2.3rem;
-  padding-right: 5rem; }
+  font-size: 2.8rem;
+  padding-right: 5rem;
+  line-height: 1.3; }
 
 .paragraph {
-  margin-top: 2rem;
-  color: #e2d6e5; }
+  margin-top: 1rem;
+  color: #e2d6e5;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 300; }
 
 .logo {
-  width: 11rem; }
+  width: 14rem; }
 
 .btn__register {
-  padding: 1rem 3.3rem;
-  color: #5334a2;
+  padding: 1rem 3.7rem;
+  color: #7e5ece;
   background-color: #fcfbfc;
   border-radius: 50px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   text-decoration: none;
   box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.39); }
 
+.home-main-social {
+  height: 50px;
+  margin-top: 10px;
+  display: grid;
+  justify-content: end;
+  grid-column: 2/3;
+  align-content: center;
+  width: 100%; }
+
+.social-networks {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  fill: white;
+  width: 100%; }
+  .social-networks__fb {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 2.5rem;
+    outline: 2px solid white;
+    border-radius: 50%;
+    outline-offset: 0.5rem; }
+  .social-networks__twitter {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 2.5rem;
+    outline: 2px solid white;
+    border-radius: 50%;
+    outline-offset: 0.5rem; }
+  .social-networks__ig {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 2.5rem;
+    outline: 2px solid white;
+    border-radius: 50%;
+    outline-offset: 0.5rem; }
+
 .section-container {
   padding-top: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem; }
+  padding-left: 4.5rem;
+  padding-right: 4.5rem; }
 
 .lp-body {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 2rem; }
+  column-gap: 3rem; }
   .lp-body__bg-img {
     width: 50vw; }

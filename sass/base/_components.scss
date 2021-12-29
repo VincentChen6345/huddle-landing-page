@@ -1,13 +1,62 @@
 .logo {
-  width: 11rem;
+  width: 14rem;
 }
 
 .btn__register {
-  padding: 1rem 3.3rem;
-  color: $bg-color;
+  padding: 1rem 3.7rem;
+  color: $bg-color-light;
   background-color: $heading-color;
   border-radius: 50px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   text-decoration: none;
   box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.39);
 }
+
+.home-main-social {
+  height: 50px;
+  margin-top: 10px;
+  display: grid;
+  justify-content: end;
+  grid-column: 2/3;
+  align-content: center;
+  width: 100%;
+}
+
+.social-networks {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  fill: white;
+  width: 100%;
+
+  &__fb {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 2.5rem;
+    outline: 2px solid white;
+    border-radius: 50%;
+    outline-offset: 0.5rem;
+  }
+  &__twitter {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 2.5rem;
+    outline: 2px solid white;
+    border-radius: 50%;
+    outline-offset: 0.5rem;
+  }
+  &__ig {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 2.5rem;
+    outline: 2px solid white;
+    border-radius: 50%;
+    outline-offset: 0.5rem;
+  }
+}
+// .link-ig {
+//   width: 1.5rem;
+//   height: 1.5rem;
+//   fill: white;
+// }
