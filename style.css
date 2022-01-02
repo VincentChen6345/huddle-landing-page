@@ -18,9 +18,20 @@ body {
 .heading-primary {
   margin-top: 3rem;
   color: #fcfbfc;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   padding-right: 5rem;
   line-height: 1.3; }
+  @media only screen and (max-width: 67.1875em) {
+    .heading-primary {
+      text-align: center;
+      padding-right: 0rem; } }
+  @media only screen and (max-width: 35.25em) {
+    .heading-primary {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 25.9375em) {
+    .heading-primary {
+      font-size: 1.7rem;
+      text-align: center; } }
 
 .paragraph {
   margin-top: 1rem;
@@ -29,9 +40,15 @@ body {
   margin-bottom: 1rem;
   line-height: 1.5;
   font-weight: 300; }
+  @media only screen and (max-width: 25.9375em) {
+    .paragraph {
+      font-size: 1rem; } }
 
 .logo {
   width: 14rem; }
+  @media only screen and (max-width: 35.25em) {
+    .logo {
+      width: 10rem; } }
 
 .btn__register {
   padding: 1rem 3.7rem;
@@ -41,6 +58,9 @@ body {
   font-size: 1.2rem;
   text-decoration: none;
   box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.39); }
+  @media only screen and (max-width: 35.25em) {
+    .btn__register {
+      font-size: 1rem; } }
 
 .home-main-social {
   height: 50px;
@@ -50,6 +70,11 @@ body {
   grid-column: 2/3;
   align-content: center;
   width: 100%; }
+  @media only screen and (max-width: 67.1875em) {
+    .home-main-social {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      justify-content: center; } }
 
 .social-networks {
   font-size: 16px;
@@ -58,37 +83,64 @@ body {
   align-content: center;
   fill: white;
   width: 100%; }
+  @media only screen and (max-width: 67.1875em) {
+    .social-networks {
+      margin-top: 9rem; } }
   .social-networks__fb {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 2.5rem;
-    outline: 2px solid white;
+    width: 1rem;
+    height: 1rem;
+    outline: 1.5px solid white;
     border-radius: 50%;
-    outline-offset: 0.5rem; }
+    outline-offset: 0.6rem;
+    margin-right: 2.5rem; }
   .social-networks__twitter {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 2.5rem;
-    outline: 2px solid white;
+    width: 1rem;
+    height: 1rem;
+    outline: 1.5px solid white;
     border-radius: 50%;
-    outline-offset: 0.5rem; }
+    outline-offset: 0.6rem;
+    margin-right: 2.5rem; }
   .social-networks__ig {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 2.5rem;
-    outline: 2px solid white;
+    width: 1rem;
+    height: 1rem;
+    outline: 1.5px solid white;
     border-radius: 50%;
-    outline-offset: 0.5rem; }
+    outline-offset: 0.6rem; }
 
 .section-container {
   padding-top: 3rem;
   padding-left: 4.5rem;
-  padding-right: 4.5rem; }
+  padding-right: 3rem; }
+  @media only screen and (max-width: 67.1875em) {
+    .section-container {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
+  @media only screen and (max-width: 25.9375em) {
+    .section-container {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
 
 .lp-body {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 3rem; }
+  @media only screen and (max-width: 67.1875em) {
+    .lp-body {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto;
+      column-gap: 0rem; } }
   .lp-body__bg-img {
-    width: 50vw; }
+    width: 50vw;
+    grid-column: 1/2; }
+    @media only screen and (max-width: 67.1875em) {
+      .lp-body__bg-img {
+        grid-row: 1/2;
+        width: 80vw; } }
+  .lp-body__content {
+    grid-column: 2/3; }
+    @media only screen and (max-width: 67.1875em) {
+      .lp-body__content {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        text-align: center; } }

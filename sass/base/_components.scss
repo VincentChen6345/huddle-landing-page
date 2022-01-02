@@ -1,5 +1,8 @@
 .logo {
   width: 14rem;
+  @media only screen and (max-width: $bp-medium) {
+    width: 10rem;
+  }
 }
 
 .btn__register {
@@ -10,6 +13,10 @@
   font-size: 1.2rem;
   text-decoration: none;
   box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.39);
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1rem;
+  }
 }
 
 .home-main-social {
@@ -20,6 +27,11 @@
   grid-column: 2/3;
   align-content: center;
   width: 100%;
+  @media only screen and (max-width: $bp-large) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-content: center;
+  }
 }
 
 .social-networks {
@@ -29,34 +41,18 @@
   align-content: center;
   fill: white;
   width: 100%;
-
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 9rem;
+  }
   &__fb {
-    width: 1.5rem;
-    height: 1.5rem;
+    @include icon-style;
     margin-right: 2.5rem;
-    outline: 2px solid white;
-    border-radius: 50%;
-    outline-offset: 0.5rem;
   }
   &__twitter {
-    width: 1.5rem;
-    height: 1.5rem;
+    @include icon-style;
     margin-right: 2.5rem;
-    outline: 2px solid white;
-    border-radius: 50%;
-    outline-offset: 0.5rem;
   }
   &__ig {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 2.5rem;
-    outline: 2px solid white;
-    border-radius: 50%;
-    outline-offset: 0.5rem;
+    @include icon-style;
   }
 }
-// .link-ig {
-//   width: 1.5rem;
-//   height: 1.5rem;
-//   fill: white;
-// }

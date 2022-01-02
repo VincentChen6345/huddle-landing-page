@@ -1,0 +1,15 @@
+@mixin icon-style {
+  width: 1rem;
+  height: 1rem;
+  outline: 1.5px solid white;
+  border-radius: 50%;
+  outline-offset: 0.6rem;
+}
+
+@mixin fb-twitter-style {
+  width: 1rem;
+  height: 1rem;
+  outline: 1.5px solid white;
+  border-radius: 50%;
+  outline-offset: 0.6rem;
+} ;

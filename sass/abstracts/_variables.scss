@@ -3,3 +3,8 @@ $bg-color: rgb(83, 52, 162);
 $heading-color: rgb(252, 251, 252);
 $paragraph-color: rgb(226, 214, 229);
 $bg-color-light: rgb(126, 94, 206);
+
+//breakpoints
+$bp-large: px-to-em(1075);
+$bp-medium: px-to-em(564);
+$bp-small: px-to-em(415);
