@@ -4,6 +4,12 @@
   outline: 1.5px solid white;
   border-radius: 50%;
   outline-offset: 0.6rem;
+  transition: all 0.4s ease;
+  fill: white;
+
+  &:hover {
+    outline: 1.5px solid $hover-color;
+  }
 }
 
 @mixin fb-twitter-style {
@@ -12,4 +18,9 @@
   outline: 1.5px solid white;
   border-radius: 50%;
   outline-offset: 0.6rem;
+  transition: all 0.4s ease;
+  fill: white;
+  &:hover {
+    outline: 1.5px solid $hover-color;
+  }
 } ;

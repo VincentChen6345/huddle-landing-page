@@ -57,10 +57,14 @@ body {
   border-radius: 50px;
   font-size: 1.2rem;
   text-decoration: none;
-  box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.39); }
+  box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.39);
+  transition: all 0.4s ease-out; }
   @media only screen and (max-width: 35.25em) {
     .btn__register {
       font-size: 1rem; } }
+  .btn__register:hover {
+    background-color: #e164e1;
+    color: white; }
 
 .home-main-social {
   height: 50px;
@@ -76,13 +80,19 @@ body {
       grid-row: 3/4;
       justify-content: center; } }
 
+a,
+a:link {
+  text-decoration: none;
+  color: white; }
+
 .social-networks {
   font-size: 16px;
   display: flex;
   justify-content: center;
   align-content: center;
   fill: white;
-  width: 100%; }
+  width: 100%;
+  transition: all 0.4s ease; }
   @media only screen and (max-width: 67.1875em) {
     .social-networks {
       margin-top: 9rem; } }
@@ -92,20 +102,38 @@ body {
     outline: 1.5px solid white;
     border-radius: 50%;
     outline-offset: 0.6rem;
+    transition: all 0.4s ease;
+    fill: white;
     margin-right: 2.5rem; }
+    .social-networks__fb:hover {
+      outline: 1.5px solid #e164e1; }
+    .social-networks__fb:hover {
+      fill: #e164e1; }
   .social-networks__twitter {
     width: 1rem;
     height: 1rem;
     outline: 1.5px solid white;
     border-radius: 50%;
     outline-offset: 0.6rem;
+    transition: all 0.4s ease;
+    fill: white;
     margin-right: 2.5rem; }
+    .social-networks__twitter:hover {
+      outline: 1.5px solid #e164e1; }
+    .social-networks__twitter:hover {
+      fill: #e164e1; }
   .social-networks__ig {
     width: 1rem;
     height: 1rem;
     outline: 1.5px solid white;
     border-radius: 50%;
-    outline-offset: 0.6rem; }
+    outline-offset: 0.6rem;
+    transition: all 0.4s ease;
+    fill: white; }
+    .social-networks__ig:hover {
+      outline: 1.5px solid #e164e1; }
+    .social-networks__ig:hover {
+      fill: #e164e1; }
 
 .section-container {
   padding-top: 3rem;

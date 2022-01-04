@@ -13,9 +13,14 @@
   font-size: 1.2rem;
   text-decoration: none;
   box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.39);
+  transition: all 0.4s ease-out;
 
   @media only screen and (max-width: $bp-medium) {
     font-size: 1rem;
+  }
+  &:hover {
+    background-color: $hover-color;
+    color: white;
   }
 }
 
@@ -33,7 +38,11 @@
     justify-content: center;
   }
 }
-
+a,
+a:link {
+  text-decoration: none;
+  color: white;
+}
 .social-networks {
   font-size: 16px;
   display: flex;
@@ -41,18 +50,29 @@
   align-content: center;
   fill: white;
   width: 100%;
+  transition: all 0.4s ease;
   @media only screen and (max-width: $bp-large) {
     margin-top: 9rem;
   }
+
   &__fb {
     @include icon-style;
     margin-right: 2.5rem;
+    &:hover {
+      fill: $hover-color;
+    }
   }
   &__twitter {
     @include icon-style;
     margin-right: 2.5rem;
+    &:hover {
+      fill: $hover-color;
+    }
   }
   &__ig {
     @include icon-style;
+    &:hover {
+      fill: $hover-color;
+    }
   }
 }
